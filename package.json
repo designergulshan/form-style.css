@@ -1,0 +1,27 @@
+{
+  "name": "form-style.css",
+  "version": "1.0.0",
+  "description": "Easy to used css3 library for custom form elements.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/designergulshan/form-style.css.git"
+  },
+  "author": "Gulshan kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/designergulshan/form-style.css/issues"
+  },
+  "homepage": "https://github.com/designergulshan/form-style.css#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-util": "^3.0.7"
+  }
+}

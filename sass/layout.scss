@@ -1,0 +1,15 @@
+body {
+  font-family: $fs-font;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+h1 {
+  font-weight: normal;
+}
+hr {
+  border: none;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+}
