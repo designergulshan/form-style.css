@@ -2,12 +2,14 @@ var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     rename = require('gulp-rename'),
     cleanCss = require('gulp-clean-css'),
+    plumber = require('gulp-plumber'),
     browserSync = require('browser-sync').create();
 
 
 // SASS TASK
 gulp.task('sass', function () {
   return sass('sass/form-style.scss')
+    .pipe(plumber())
     .on('error', sass.logError)
     .pipe(gulp.dest('css'))
     .pipe(cleanCss())
