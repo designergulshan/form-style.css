@@ -2,21 +2,31 @@
 @import 'mixins.scss';
 @import 'layout.scss';
 
-// default
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+// first button style
+.btn-1 {
+  // value overwrite
+  $theme-color: #E25924;
+
+  border: none;
+  background: $theme-color;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: lighten(#E25924, 40%);
+  cursor: pointer;
+  @include transition(.25s, cubic-bezier(0.950, 0.050, 0.795, 0.035));
+  box-shadow: 0 2px 5px rgba(0,0,0,.4);
+  &:hover {
+    border-radius: 18px;
+    background: #fff;
+    color: $theme-color;
+  }
 }
 
-.fs-btn {
-  cursor: pointer;
-  display: inline-block;
-  border: $btn-border;
-  padding: $padding;
-  border-radius: $border-radius;
-  background: $bg-color;
-  color: $text-color;
-  @include fs-style;
-  text-decoration: none;
+// second button style
+.btn-2 {
+  
 }

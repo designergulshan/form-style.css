@@ -1,20 +1,6 @@
-@mixin fs-style() {
-  font: {
-    size: $font-size;
-    weight: $font-weight;
-  }
-  // height: $font-size*2.7;
-  @include transition(.25s);
-  &:hover {
-    color: #fff;
-    background: hsl($hue: 28, $saturation: 100%, $lightness: 50%);
-    text-decoration: none;
-  }
-}
-
 @mixin transition($duration:.2s, $transition-timing: ease-out) {
-  -webkit-transition: background-color $duration $transition-timing;
-  -moz-transition: background-color $duration $transition-timing;
-  -o-transition: background-color $duration $transition-timing;
-  transition: background-color $duration $transition-timing;
+  -webkit-transition: all $duration $transition-timing;
+  -moz-transition: all $duration $transition-timing;
+  -o-transition: all $duration $transition-timing;
+  transition: all $duration $transition-timing;
 }

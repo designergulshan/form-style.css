@@ -1,15 +1,71 @@
+// theme variables
+$text-color:      #fff;
+$theme-color:     #C213D4;
+$base-font:       Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
 body {
-  font-family: $fs-font;
+  font-family: $base-font;
+  color: $text-color;
+  background: url('../images/bg.png');
 }
 .container {
   width: 1170px;
   margin: 0 auto;
 }
 h1 {
-  font-weight: normal;
+  a {
+    color: $theme-color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 hr {
   border: none;
-  border-bottom: 2px solid #ddd;
-  margin-bottom: 20px;
+  border-bottom: 2px solid $theme-color;
+  margin-bottom: 100px;
+  margin-top: 0;
+}
+.paging {
+  margin: 0 0 -2px;
+  padding: 0;
+  text-align: center;
+  li {
+    display: inline-block;
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      padding: 7px 16px;
+      display: inline-block;
+      color: $theme-color;
+      border-bottom: 2px solid $theme-color;
+      @include transition(.1s);
+      &:hover,
+      &.active {
+        // background: $theme-color;
+        color: #fff;
+        border-color: #fff;
+      }
+    }
+  }
+}
+
+.buttons-container {
+  text-align: center;
 }
