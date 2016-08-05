@@ -76,3 +76,17 @@ hr {
     border-radius: 18px;
     background: #fff;
     color: #E25924; }
+
+.btn-2 {
+  background: #bbff33 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 7px 0 6px;
+  box-shadow: 2px 1px 0 #f6f6f6;
+  color: #414141;
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 15px;
+  text-decoration: none; }
+  .btn-2:hover, .btn-2:focus {
+    border-radius: 0 5px 0 5px;
+    transition: all 0.5s ease 0s; }
