@@ -98,7 +98,7 @@ hr {
   width: 200px;
   position: relative; }
   .button a {
-    background: #20c1d5;
+    background: #ff0000;
     color: white;
     display: block;
     height: 50px;
@@ -108,7 +108,8 @@ hr {
     width: 200px;
     padding: 15px 0;
     border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); }
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
   .button p {
     border-radius: 10px;
     background: #222;
@@ -131,3 +132,5 @@ hr {
     margin: 2px 0 0 10px; }
   .button:hover .top {
     margin: -89px 0 0 10px; }
+
+/*# sourceMappingURL=form-style.css.map */
