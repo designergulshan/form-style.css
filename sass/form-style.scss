@@ -29,8 +29,8 @@
 // second button style
 .btn-2 {
   // style 2
-  background: #bbff33 none repeat scroll 0 0;
-  border: medium none;
+  background: #bbff33;
+  border: none;
   border-radius: 7px 0 6px;
   box-shadow: 2px 1px 0 #f6f6f6;
   color: #414141;
@@ -38,9 +38,58 @@
   font-size: 14px;
   padding: 5px 15px;
   text-decoration: none;
-  &:hover , &:focus{
+  &:hover, 
+  &:focus {
     border-radius:  0 5px 0 5px;
     transition: all 0.5s ease 0s;
   }
 
 }
+// thrir page style 
+.button {
+  display: block;
+  margin: 100px auto;
+  width: 200px;
+  position: relative;
+  a {
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #00b7ea 0%, #009ec3 100%) repeat scroll 0 0;
+    color: white;
+    display: block;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    padding: 15px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+  p {
+      border-radius: 10px;
+      background: #222;
+      color: #fff;
+      display: block;
+      height: 40px;
+      padding: 10px 0;
+      margin: -50px 0 0 10px;
+      position: absolute;
+      text-align: center;
+      transition: margin 0.2s ease 0s;
+      width: 180px;
+      z-index: -1;
+      text-transform: capitalize;
+    }
+    &:hover .left {
+      margin: -45px 0 0 180px;
+    }
+    &:hover .right {
+      margin: -45px  0 0 -150px;
+    }
+    &:hover .bottom {
+      margin: 2px 0 0 10px;
+    }
+    &:hover .top {
+      margin: -89px 0 0 10px;
+    }
+}
+
