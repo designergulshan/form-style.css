@@ -99,7 +99,7 @@ hr {
   position: relative; }
   .button a {
     background: #20c1d5;
-    color: white;
+    color: #414141;
     display: block;
     height: 50px;
     text-align: center;
@@ -124,9 +124,9 @@ hr {
     z-index: -1;
     text-transform: capitalize; }
   .button:hover .left {
-    margin: -45px 0 0 180px; }
+    margin: -45px 0 0 202px; }
   .button:hover .right {
-    margin: -45px  0 0 -150px; }
+    margin: -45px 0 0 -180px; }
   .button:hover .bottom {
     margin: 2px 0 0 10px; }
   .button:hover .top {

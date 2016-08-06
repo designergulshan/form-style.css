@@ -54,7 +54,7 @@
   position: relative;
   a {
     background: #20c1d5;
-    color: white;
+    color: #414141;
     display: block;
     height: 50px;
     text-align: center;
@@ -81,10 +81,10 @@
       text-transform: capitalize;
     }
     &:hover .left {
-      margin: -45px 0 0 180px;
+      margin: -45px 0 0 202px;
     }
     &:hover .right {
-      margin: -45px  0 0 -150px;
+      margin: -45px 0 0 -180px;
     }
     &:hover .bottom {
       margin: 2px 0 0 10px;
