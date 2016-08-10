@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>form-style.css</title>
+  <style>
+  	*{box-sizing: border-box;}
+body{
+  background: #e6f130; 
+  line-height:1.2;
+}
+h2{
+  text-align: center;
+  color: #414141;
+  text-shadow: 1px 1px #eee;
+}
+.tweet{
+	width:180px;
+	margin: 0 auto;
+}
+.tweet button{
+	background-color: #166f76;
+	display: block;
+	width: 100%;
+	border:1px solid #fff;
+	cursor: pointer;
+	height: 50px;
+}
+.tweet button .data {
+	display: none;
+	color: #fff;
+}
+.tweet button strong{
+	color: #fff;
+	font-weight: 500;
+	text-transform: capitalize;
+	font-size: 16px;
+}
+.tweet button .data span{
+	font-size: 14px;
+	text-align: center;
+}
+.tweet button:hover{
+	background-color: #2dcfdd; 
+	transition: all 0.18s ease 0s;
+}
+.tweet button:hover strong{
+	display: none;
+	transition: all 0.20s ease 0s;
+}
+.tweet button:hover .data{
+	display: block;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Hover this button See What is inside </h2>
+	<div class="tweet">
+	    <button>
+	    	<strong>Tuch Me</strong> 
+	    	<div class="data">
+	    		<span class="icon-twitter">Twitter 10.5K</span>
+	    	</div>
+	    </button>
+	    <button class="first">
+	    	<strong>Tuch Me</strong> 
+	    	<div class="data">
+	    		<span class="icon-twitter">Facebook 25.5K</span>
+	    	</div>
+	    </button>
+	  </div>
+	  <div class="cover">
+	    
+	  </div>
+	</div>	  
+
+<!--<div class="buttons-container">
+      <input class="btn-3" type="button" value="Input Button">
+      <input class="btn-3" type="submit" value="Input Submit">
+      <a class="btn-3" href="javascript:void(0);">Anchor Button</a>
+      <button class="btn-3" type="submit" value="Submit">Submit</button>
+      <button class="btn-3" type="reset" value="Reset">Reset</button>
+    </div>-->
+</div>
+</body>
+</html>
